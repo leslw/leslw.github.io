@@ -1,9 +1,13 @@
 .banner {
     background-image: url("../images/22EA8203-9AC8-45F8-8366-61C21FFBB5C1.JPG");
-    height: 300px;
+    height: 250px;
     background-position: bottom;background-size: cover;
 }
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+small {
+    color: white !important;
 }
