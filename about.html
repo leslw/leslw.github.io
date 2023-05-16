@@ -8,25 +8,26 @@
     <link rel="stylesheet" href="./resources/stylesheets/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-dark-subtle">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <h2 class="navbar-brand">Les Lewis-Wilson</h2>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg  fixed-top navbar-dark bg-dark">
+            <h2 class="navbar-brand ms-4">Les Lewis-Wilson</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto me-4">
                     <li class="nav-item"><a class="nav-link" href="./index.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>    
             </div>
         </nav>
-        <div class="banner d-flex justify-content-center align-items-center">
+        <div class="banner d-flex justify-content-center align-items-center mt-5">
            <h1>About</h1>
         </div>
     </header>
-    <main class="d-flex justify-content-around align-items-center py-5">
+    <main class="d-flex justify-content-around py-5">
         <div>
             <P>Here is some information about me</P>
             <ul>
@@ -35,11 +36,11 @@
         </div>
 
         <div class="w-25">
-            <img src="./resources/images/IMG_9853.JPG" class="img-fluid" alt="Les Lewis-Wilson">
+            <img src="./resources/images/IMG_9853.JPG" class="img-fluid rounded-circle" alt="Les Lewis-Wilson">
             
         </div>
     </main>
-    <footer class="navbar navbar-expand-lg bg-dark navbar-dark fixed-bottom">
+    <footer class="navbar navbar-expand-lg bg-dark navbar-dark sticky-bottom">
         <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#footer">
             <span class="navbar-toggler-icon"></span>
           </button>

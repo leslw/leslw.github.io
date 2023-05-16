@@ -8,36 +8,67 @@
     <link rel="stylesheet" href="./resources/stylesheets/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
-<body>
+<body class="bg-dark-subtle">
     <header>
-        <h2>Les Lewis-Wilson</h2>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <h2 class="navbar-brand">Les Lewis-Wilson</h2>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg  fixed-top navbar-dark bg-dark">
+            <h2 class="navbar-brand ms-4">Les Lewis-Wilson</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto me-4">
                     <li class="nav-item"><a class="nav-link" href="./index.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>    
             </div>
         </nav>
-        <div class="banner d-flex justify-content-center align-items-center">
-           <h1>Projects</h1>
+        <div class="banner d-flex justify-content-center align-items-center mt-5">
+           <h1>Contact</h1>
         </div>
     </header>
     <main>
-        <div>
-            <P>Here is a list some of the projects that I'm most proud of</P>
+        <div class="container mt-5">
+            <h2 class="text-center">Links</h2>
             <ul>
-                <li><a href=""></a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/les-lewis-wilson/" target="_blank">My Linkedin Profile</a>
+                </li>
+                <li>
+                    <a href="https://github.com/leslw" target="_blank">My GitHub Profile</a>
+                </li>
             </ul>
+            <h2 class="text-center">Contact Me</h2>
+            <form action="" class="row g-3 mb-5">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+                <div class="col-md-8">
+                    <label for="emailInfo" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="emailInfo" required>
+                </div>
+                <div class="col-md-4">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="+1(313)867-5309">
+                </div>
+                <div class="col-md-12">
+                    <label for="commentArea" class="form-label">Questions, Comments, Suggestions...</label>
+                    <textarea name="" class="form-control" id="commentArea" rows="4" placeholder="Les, you do great work! I would like to offer you a job. " required></textarea>
+                </div>
+                <div class="col-auto mx-auto">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
         </div>
             
         </div>
     </main>
-    <footer class="navbar navbar-expand-lg bg-dark navbar-dark fixed-bottom">
+    <footer class="navbar navbar-expand-lg bg-dark navbar-dark sticky-bottom">
         <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#footer">
             <span class="navbar-toggler-icon"></span>
           </button>
