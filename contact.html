@@ -10,70 +10,70 @@
 </head>
 <body class="bg-dark-subtle">
     <header>
-        <nav class="navbar navbar-expand-lg  fixed-top navbar-dark bg-dark">
+        <nav aria-label="Main Navigation" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <h2 class="navbar-brand ms-4">Les Lewis-Wilson</h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto me-4">
                     <li class="nav-item"><a class="nav-link" href="./index.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-                </ul>    
+                </ul>
             </div>
         </nav>
-        <div class="banner d-flex justify-content-center align-items-center mt-5">
-           <h1>Contact</h1>
-        </div>
+        <header role="banner" class="banner d-flex justify-content-center align-items-center mt-5">
+            <h1>Contact</h1>
+        </header>
     </header>
-    <main>
-        <div class="container mt-5">
-            <h2 class="text-center">Links</h2>
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/les-lewis-wilson/" target="_blank">My Linkedin Profile</a>
-                </li>
-                <li>
-                    <a href="https://github.com/leslw" target="_blank">My GitHub Profile</a>
-                </li>
-            </ul>
-            <h2 class="text-center">Contact Me</h2>
-            <form onsubmit="sendEmail(); reset(); return false" method="POST" class="row g-3 mb-5">
-                <div class="col-md-6">
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Eddard" name="firstName" required>
-                </div>
-                <div class="col-md-6">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="Stark" name="lastName" required>
-                </div>
-                <div class="col-md-12">
-                    <label for="emailInfo" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="emailInfo" placeholder="lord@winterfell.com" name="email" required>
-                </div>
-                <div class="col-md-4">
-                    <label for="phoneNumber" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control" id="phoneNumber" placeholder="+1(313)867-5309" name:="phoneNumber">
-                </div>
-                <div class="col-md-12">
-                    <label for="commentArea" class="form-label">Questions, Comments, Suggestions...</label>
-                    <textarea name="message" class="form-control" id="commentArea" rows="4" placeholder="Les, you do great work! I would like to offer you a job. " required></textarea>
-                </div>
-                <div class="col-auto mx-auto">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </form>
-        </div>
-            
-        </div>
+    <main class="row g-3 px-5 my-4">
+        <section>
+            <div class="container mt-5">
+                <h2 class="text-center">Links</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/les-lewis-wilson/" target="_blank" rel="noopener">My Linkedin Profile</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/leslw" target="_blank" rel="noopener">My GitHub Profile</a>
+                    </li>
+                </ul>
+                <h2 class="text-center">Contact Me</h2>
+                <form role="form" method="POST" class="row g-3 form-contact">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Eddard" name="firstName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Stark" name="lastName" required>
+                    </div>
+                    <div class="col-md-8">
+                        <label for="emailInfo" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="emailInfo" placeholder="lord@winterfell.com" name="email" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="+1(313)867-5309" name="phoneNumber">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="commentArea" class="form-label">Questions, Comments, Suggestions...</label>
+                        <textarea name="message" class="form-control" id="commentArea" rows="4" placeholder="Les, you do great work! I would like to offer you a job." required></textarea>
+                    </div>
+                    <div class="col-auto mx-auto">
+                        <button role="button" type="submit" class="btn btn-primary mb-5">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer class="navbar navbar-expand-lg bg-dark navbar-dark sticky-bottom">
+    <footer class="navbar navbar-expand-lg bg-dark navbar-dark fixed-bottom">
         <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#footer">
             <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
         <div class="collapse navbar-collapse" id="footer">
-             <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="./index.html">Projects</a>
                 </li>
@@ -85,25 +85,10 @@
                 </li>
             </ul>
         </div>
-        <small class="nav-link pe-3">© copyright 2023 leslw</small>
+        <small class="nav-link pe-3">© 2023 leslw</small>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){ 
-            Email.send({
-                SecureToken : "b0230d94-e4f1-4001-b852-f71cccad1d8e",
-                To : "lewiswilson.leslie@gmail.com",
-                From : document.getElementById("emailInfo").value,
-                Subject : "New Contact Form Submission",
-                Body : "Name: " + document.getElementById("firstName").value + " " + document.getElementById("lastName").value
-                + "<br> Email: " + document.getElementById("emailInfo").value
-                + "<br> Phone: " + document.getElementById("phoneNumber").value
-                + "<br> Message: " + document.getElementById("commentArea").value
-            }).then(
-            message => alert(message)
-            );
-        }
-    </script>
+    <script src="./index.js"></script>
 </body>
 </html>

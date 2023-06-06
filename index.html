@@ -10,7 +10,7 @@
 </head>
 <body class="bg-dark-subtle">
     <header>
-        <nav class="navbar navbar-expand-lg  fixed-top navbar-dark bg-dark">
+        <nav aria-label="Main Navigation" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <h2 class="navbar-brand ms-4">Les Lewis-Wilson</h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -23,24 +23,33 @@
                 </ul>    
             </div>
         </nav>
-        <div class="banner d-flex justify-content-center align-items-center mt-5">
-           <h1>Projects</h1>
-        </div>
+        <header role="banner" class="banner d-flex justify-content-center align-items-center mt-5">
+           <h1 id="banner-heading">Projects</h1>
+        </header>
     </header>
-    <main class="d-flex justify-content-around py-5">
-        <div>
-            <h2>Here is a list some of the projects that I'm most proud of:</h2>
-            <ul>
-                <li>
-                    <a href="https://www.zanebeauty.com/">Zane Beauty Box</a>
-                    <p>This is a wesite that I created for a clients beauty subsciption box.</p>
-                </li>
-            </ul>
-        </div>
+    <main class="row g-3 px-5 my-4">
+        <section class="col-md-8">
+            <div >
+                <h2 class="text-center mb-4">Here is a list some of the projects that I'm most proud of:</h2>
+                <ul>
+                    <li role="article">
+                        <a href="https://leslw.github.io/index.html" aria-describedby="project1-description">This Portfolio Site (the one you are looking at right now)</a>
+                        <p id="project1-description">This site is responsive and accessibility-friendly. I taught myself how to make a functional contact form on the <a href="https://leslw.github.io/contact.html">Contact Page</a></p>
+                    </li>
+                    <li role="article">
+                        <a href="https://www.zanebeauty.com/" target="_blank" aria-describedby="project2-description">Zane Beauty Box</a>
+                        <p id="project2-description">This is a website that I created for a client's beauty subscription box.</p>
+                    </li>
+                    <li role="article">This list is a work in progress. Check back later for my latest projects.</li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="w-25 d-flex justify-content-center align-items-center">
-            <img src="./resources/images/lesAtTheOcean.JPG" class="img-fluid" alt="Les Lewis-Wilson">
-            
+        <div class="col-md-4">
+            <figure>
+                <img src="./resources/images/lesAtTheOcean.jpg" class="img-fluid" alt="Les Lewis-Wilson">
+                <figcaption>Les Lewis-Wilson</figcaption>
+            </figure>
         </div>
     </main>
     <footer class="navbar navbar-expand-lg bg-dark navbar-dark sticky-bottom">
@@ -60,7 +69,7 @@
                 </li>
             </ul>
         </div>
-        <small class="nav-link pe-3">© copyright 2023 leslw</small>
+        <small class="nav-link pe-3">&copy; 2023 leslw</small>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

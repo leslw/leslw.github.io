@@ -10,46 +10,65 @@
 </head>
 <body class="bg-dark-subtle">
     <header>
-        <nav class="navbar navbar-expand-lg  fixed-top navbar-dark bg-dark">
+        <nav aria-label="Main Navigation" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <h2 class="navbar-brand ms-4">Les Lewis-Wilson</h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto me-4">
                     <li class="nav-item"><a class="nav-link" href="./index.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-                </ul>    
+                </ul>
             </div>
         </nav>
-        <div class="banner d-flex justify-content-center align-items-center mt-5">
-           <h1>About</h1>
-        </div>
+        <header role="banner" class="banner d-flex justify-content-center align-items-center mt-5">
+            <h1 id="banner-heading">About</h1>
+        </header>
     </header>
-    <main class="row g-3 px-5 my-4">
-        <div class="col-md-8">
-            <h2 class="text-center mb-4">A little about me...</h2>
-            <p>
-                I'm Les, an aspiring developer. I have almost a decade of experince in the IT field, but its time for a change. I love the critical thinking and problem solving aspects of development.
-                I love to meet new people and working collaboratively towards a common goal. 
-            </p>
-            <p>
-                Like most people, I have a life outside of the office. When I am not working I enjoy playing board and video games with friends or traveling and exploring new places. 
-            </p>
-        </div>
+    <main class="px-5 my-4">
+        <section class="row g-3">
+            <div class="col-md-8">
+                <h2 class="text-center mb-4">A little about me...</h2>
+                <article>
+                    <h3>Introduction</h3>
+                    <p>
+                        I'm Les, an aspiring developer. I have almost a decade of experience in the IT field, but it's time for a change. I love the critical thinking and problem-solving aspects of development.
+                        I love to meet new people and work collaboratively towards a common goal.
+                    </p>
+                </article>
+                <article>
+                    <h3>Personal Life</h3>
+                    <p>
+                        Like most people, I have a life outside of the office. When I am not working, I enjoy playing board and video games with friends or traveling and exploring new places.
+                    </p>
+                </article>
+                <article>
+                    <h3>Programming Languages</h3>
+                    <p>
+                        I have some familiarity with the following languages:
+                    </p>
+                    <ul>
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>HTML/CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </article>
+            </div>
 
-        <div class="col-md-4">
-            <img src="./resources/images/IMG_9853.JPG" class="img-fluid" alt="Les Lewis-Wilson">
-            
-        </div>
+            <div class="col-md-4">
+                <img src="./resources/images/IMG_9853.JPG" class="img-fluid" alt="Les Lewis-Wilson">
+            </div>
+        </section>
     </main>
     <footer class="navbar navbar-expand-lg bg-dark navbar-dark sticky-bottom">
         <button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#footer">
             <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
         <div class="collapse navbar-collapse" id="footer">
-             <ul class="navbar-nav mx-auto">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="./index.html">Projects</a>
                 </li>
@@ -61,7 +80,7 @@
                 </li>
             </ul>
         </div>
-        <small class="nav-link pe-3">© copyright 2023 leslw</small>
+        <small class="nav-link pe-3">&copy; 2023 leslw</small>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
